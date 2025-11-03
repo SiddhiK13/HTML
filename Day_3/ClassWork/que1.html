@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Demo</title>
+</head>
+<body>
+    <h1> Media example </h1>
+
+    <!-- ading img -->
+     <img src="./src/image.png" >
+    
+    <!-- img Attributes -->
+    <img src="./src/image.png" alt="mountain-img" width="200" height="200">
+
+    <h1>Responsive Image</h1>
+  <picture>
+    
+    <source srcset="./src/image.png" media="(min-width: 800px)">
+    <source srcset="./src/image.png" media="(max-width: 799px)">
+    <img src="./src/image.png" alt="mountain-img" style="width:50%; height:auto;">
+  </picture>
+
+  <hr>
+
+  <h1>Audio Example</h1>
+  <audio controls>
+    <source src="./src/audio.mp3" type="audio/mpeg">
+    
+  </audio>
+
+  <hr>
+
+  <h1>Video Example</h1>
+  <video controls width="500" poster="poster.jpg">
+    <source src="./src/video.mp4" type="video/mp4">
+    
+  </video>
+
+  <hr>
+
+  <h1>YouTube Video</h1>
+  <!-- Use EMBED link, not normal YouTube link -->
+  <iframe width="684" height="392" src="https://www.youtube.com/embed/HcOc7P5BMi4" title="HTML Tutorial for Beginners | Complete HTML with Notes &amp; Code" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+</body>
+</html>
